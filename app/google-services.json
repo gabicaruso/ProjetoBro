@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "207310165535",
+    "firebase_url": "https://projetobro-12c84.firebaseio.com",
+    "project_id": "projetobro-12c84",
+    "storage_bucket": "projetobro-12c84.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:207310165535:android:c8d67a5817c5d36b",
+        "android_client_info": {
+          "package_name": "br.edu.insper.al.mayraprl.bro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "207310165535-vjb04rom42orlg6c5ntapr9it1jgh921.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.edu.insper.al.mayraprl.bro",
+            "certificate_hash": "097531154dca49b30a9afbba5549939a16eccf84"
+          }
+        },
+        {
+          "client_id": "207310165535-6j1sfh85n0spap8a3tkqrfo5kp6uptvt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDat-AB2zce85Wy7565J7l5jimDBSVkv58"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "207310165535-6j1sfh85n0spap8a3tkqrfo5kp6uptvt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
