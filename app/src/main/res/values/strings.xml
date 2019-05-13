@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">bro</string>
+
+    //firstPage
+    <string name="email"> Insira seu email: </string>
+    <string name="password"> Insira sua senha: </string>
+    <string name="login"> LogIn </string>
+    <string name="signin"> Sign In </string>
+    <string name="resetPassword"> Redefinir senha </string>
+
+    //signIn
+    <string name="buttonBack"> Voltar </string>
+
+    //usersSettings
+    <string name="logout"> Log Out </string>
+
+    //ResetPassword
+    <string name="emailResetPassword"> Insira o email para redefinição da senha: </string>
+    <string name="btnResetPassword"> Enviar </string>
 </resources>
