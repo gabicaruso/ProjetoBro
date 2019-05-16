@@ -4,8 +4,8 @@
     //firstPage
     <string name="email"> Insira seu email: </string>
     <string name="password"> Insira sua senha: </string>
-    <string name="login"> LogIn </string>
-    <string name="signin"> Sign In </string>
+    <string name="login"> Entrar </string>
+    <string name="signin"> Cadastrar-se </string>
     <string name="resetPassword"> Redefinir senha </string>
 
     //signIn
