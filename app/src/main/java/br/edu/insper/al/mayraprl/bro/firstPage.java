@@ -73,7 +73,7 @@ public class firstPage extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()){
-                            Intent logginin = new Intent(firstPage.this, UsersSettings.class);
+                            Intent logginin = new Intent(firstPage.this, MainActivity.class);
                             startActivity(logginin);
                         }else{
                             alert("Email ou senha incorretos.");

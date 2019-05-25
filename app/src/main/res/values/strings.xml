@@ -17,4 +17,24 @@
     //ResetPassword
     <string name="emailResetPassword"> Insira o email para redefinição da senha: </string>
     <string name="btnResetPassword"> Enviar </string>
+
+    //Settings
+    <string name="conta"> conta </string>
+    <string name="e_mail"> email </string>
+    <string name="contacorrente"> conta-corrente </string>
+    <string name="pagamentos"> pagamentos </string>
+    <string name="dinheiro"> seu dinheiro nao foi transferido </string>
+    <string name="duvidas"> duvidas </string>
+    <string name="conversao"> conversao em pontos </string>
+    <string name="minimizar"> botao minimizar </string>
+    <string name="ong"> quero indicar uma ong </string>
+    <string name="suporte"> Suporte </string>
+
+
+    <string name="btn_close"> Close </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
 </resources>
