@@ -6,64 +6,196 @@
     android:layout_height="match_parent"
     tools:context=".SignIn">
 
+
     <TextView
-        android:id="@+id/textEmail"
-        android:layout_width="210dp"
-        android:layout_height="48dp"
-        android:text="@string/email"
-        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/cadastro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/cadastro"
+        android:textAlignment="center"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="298dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="8dp"
+        android:autofillHints="@string/nome"
+        android:background="@drawable/text"
+        android:ems="10"
+        android:hint="@string/nome"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@id/editLastName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cadastro" />
+
+    <EditText
+        android:id="@+id/editLastName"
+        android:layout_width="298dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:autofillHints="@string/sobrenome"
+        android:background="@drawable/text"
+        android:ems="10"
+        android:hint="@string/sobrenome"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@id/editBirthday"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editName" />
+
+    <EditText
+        android:id="@+id/editBirthday"
+        android:layout_width="298dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:autofillHints="@string/nascimento"
+        android:background="@drawable/text"
+        android:ems="10"
+        android:hint="@string/nascimento"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@id/editCPF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editLastName" />
+
+    <EditText
+        android:id="@+id/editCPF"
+        android:layout_width="298dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:autofillHints="@string/cpf"
+        android:background="@drawable/text"
+        android:ems="10"
+        android:hint="@string/cpf"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@id/editAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editBirthday" />
+
+    <EditText
+        android:id="@+id/editAddress"
+        android:layout_width="298dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:autofillHints="@string/endereco"
+        android:background="@drawable/text"
+        android:ems="10"
+        android:hint="@string/endereco"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@id/editComplemento"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editCPF" />
+
+    <EditText
+        android:id="@+id/editComplemento"
+        android:layout_width="298dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:autofillHints="@string/complemento"
+        android:background="@drawable/text"
+        android:ems="10"
+        android:hint="@string/complemento"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@id/editCity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editAddress" />
+
+    <EditText
+        android:id="@+id/editCity"
+        android:layout_width="298dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:autofillHints="@string/cidade"
+        android:background="@drawable/text"
+        android:ems="10"
+        android:hint="@string/cidade"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@id/editState"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editComplemento" />
+
+    <EditText
+        android:id="@+id/editState"
+        android:layout_width="298dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:autofillHints="@string/estado"
+        android:background="@drawable/text"
+        android:ems="10"
+        android:hint="@string/estado"
+        android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@id/editEmail"
-        app:layout_constraintStart_toStartOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editCity" />
 
     <EditText
         android:id="@+id/editEmail"
-        android:layout_width="wrap_content"
+        android:layout_width="298dp"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:autofillHints="@string/email"
+        android:background="@drawable/text"
         android:ems="10"
+        android:hint="@string/email"
         android:inputType="textEmailAddress"
-        app:layout_constraintTop_toBottomOf="@id/textEmail"
-        app:layout_constraintBottom_toTopOf="@id/textPassword"
-        app:layout_constraintStart_toStartOf="parent"
-        android:importantForAutofill="no" />
-
-    <TextView
-        android:id="@+id/textPassword"
-        android:layout_width="180dp"
-        android:layout_height="62dp"
-        android:text="@string/password"
         app:layout_constraintBottom_toTopOf="@id/editPassword"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/editEmail" />
+        app:layout_constraintTop_toBottomOf="@id/editState" />
+
 
     <EditText
         android:id="@+id/editPassword"
-        android:layout_width="wrap_content"
+        android:layout_width="298dp"
         android:layout_height="wrap_content"
+        android:autofillHints="@string/password"
+        android:background="@drawable/text"
         android:ems="10"
+        android:hint="@string/password"
         android:inputType="textPassword"
-        app:layout_constraintTop_toBottomOf="@id/textPassword"
+        app:layout_constraintTop_toBottomOf="@id/editEmail"
         app:layout_constraintBottom_toTopOf="@id/buttonBack"
         app:layout_constraintStart_toStartOf="parent"
-        android:autofillHints="" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/buttonBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="168dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#9CC6D4"
         android:text="@string/buttonBack"
+        android:textColor="#FFFF"
+        app:layout_constraintEnd_toStartOf="@id/buttonSignin"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textEmail" />
+        app:layout_constraintTop_toBottomOf="@id/editPassword" />
 
     <Button
         android:id="@+id/buttonSignin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="248dp"
+        android:backgroundTint="#9CC6D4"
         android:text="@string/signin"
+        android:textColor="#FFFF"
         app:layout_constraintBottom_toBottomOf="@id/buttonBack"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/buttonBack"
-        app:layout_constraintTop_toBottomOf="@id/textEmail"
+        app:layout_constraintTop_toBottomOf="@id/editPassword"
         app:layout_constraintVertical_bias="1.0" />
 
 </android.support.constraint.ConstraintLayout>

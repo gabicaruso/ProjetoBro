@@ -10,9 +10,23 @@
 
     //signIn
     <string name="buttonBack"> Voltar </string>
+    <string name="cadastro"> CADASTRO </string>
+    <string name="nome"> Nome </string>
+    <string name="sobrenome"> Sobrenome </string>
+    <string name="nascimento"> Data de Nascimento </string>
+    <string name="endereco"> Endereco </string>
+    <string name="complemento"> Complemento </string>
+    <string name="cidade"> Cidade </string>
+    <string name="estado"> Estado </string>
+    <string name="cpf"> CPF </string>
+
 
     //usersSettings
     <string name="logout"> Log Out </string>
+    <string name="chats"> Chats </string>
+    <string name="status"> Status </string>
+    <string name="calls"> Calls </string>
+
 
     //ResetPassword
     <string name="emailResetPassword"> Insira o email para redefinição da senha: </string>
