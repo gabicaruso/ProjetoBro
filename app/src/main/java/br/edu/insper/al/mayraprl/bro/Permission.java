@@ -4,28 +4,29 @@ package br.edu.insper.al.mayraprl.bro;
         import android.content.Intent;
         import android.os.Bundle;
         import android.view.View;
-        import android.view.View.OnClickListener;
         import android.widget.Button;
 
-public class UsersSettings extends AppCompatActivity {
+public class Permission extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_permission);
 
         Button btnShowOverlay = findViewById(R.id.show_overlay);
         btnShowOverlay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 launchOverlayService();
+                Intent main = new Intent(Permission.this, MainActivity.class);
+                startActivity(main);
 
             }
         });
     }
 
     private void launchOverlayService() {
-        Intent intent = new Intent(UsersSettings.this, OverlayService.class);
+        Intent intent = new Intent(Permission.this, OverlayService.class);
         startService(intent);
     }
 }

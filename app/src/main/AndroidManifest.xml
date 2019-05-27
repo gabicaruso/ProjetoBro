@@ -27,7 +27,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".UsersSettings" />
+        <activity android:name=".Permission" />
         <activity android:name=".SignIn" />
     </application>
 

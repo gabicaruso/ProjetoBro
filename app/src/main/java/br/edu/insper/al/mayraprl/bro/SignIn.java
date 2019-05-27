@@ -60,7 +60,7 @@ public class SignIn extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()){
                             alert("Usuário cadastrado com sucesso!");
-                            Intent goToUsersStatus = new Intent(SignIn.this, UsersSettings.class);
+                            Intent goToUsersStatus = new Intent(SignIn.this, Permission.class);
                             startActivity(goToUsersStatus);
                             finish();
                         }else{
