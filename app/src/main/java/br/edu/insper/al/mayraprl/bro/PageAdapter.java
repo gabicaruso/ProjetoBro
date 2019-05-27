@@ -17,11 +17,11 @@ public class PageAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         switch(position) {
             case 0:
-                return new PaginaSaldo() ;
+                return new PageStatus() ;
             case 1:
-                return new PaginaONG();
+                return new PageONG();
             case 2:
-                return new PaginaSettings();
+                return new PageSettings();
             default:
                 return null;
         }

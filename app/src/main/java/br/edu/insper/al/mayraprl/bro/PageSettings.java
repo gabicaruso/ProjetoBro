@@ -13,10 +13,10 @@ import android.widget.Toast;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class PaginaSaldo extends Fragment {
+public class PageSettings extends Fragment {
 
 
-    public PaginaSaldo() {
+    public PageSettings() {
         // Required empty public constructor
     }
 
@@ -25,9 +25,7 @@ public class PaginaSaldo extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_pagina_saldo, container, false);
+        return inflater.inflate(R.layout.fragment_pagina_settings, container, false);
     }
-
-
 
 }

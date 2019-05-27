@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
     TabItem tabStatus;
     TabItem tabCalls;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,36 +53,37 @@ public class MainActivity extends AppCompatActivity {
                 viewPager.setCurrentItem(tab.getPosition());
                 if (tab.getPosition() == 1) {
                     toolbar.setBackgroundColor(ContextCompat.getColor(MainActivity.this,
-                            R.color.colorAccent));
+                            android.R.color.white));
                     tabLayout.setBackgroundColor(ContextCompat.getColor(MainActivity.this,
-                            R.color.colorAccent));
+                            android.R.color.white));
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                         getWindow().setStatusBarColor(ContextCompat.getColor(MainActivity.this,
-                                R.color.colorAccent));
+                                android.R.color.white));
                     }
 
                 } else if (tab.getPosition() == 2) {
                     toolbar.setBackgroundColor(ContextCompat.getColor(MainActivity.this,
-                            android.R.color.darker_gray));
+                            android.R.color.white));
                     tabLayout.setBackgroundColor(ContextCompat.getColor(MainActivity.this,
-                            android.R.color.darker_gray));
+                            android.R.color.white));
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                         getWindow().setStatusBarColor(ContextCompat.getColor(MainActivity.this,
-                                android.R.color.darker_gray));
+                                android.R.color.white));
                     }
 
                 } else {
                     toolbar.setBackgroundColor(ContextCompat.getColor(MainActivity.this,
-                            R.color.colorPrimary));
+                            android.R.color.white));
                     tabLayout.setBackgroundColor(ContextCompat.getColor(MainActivity.this,
-                            R.color.colorPrimary));
+                            android.R.color.white));
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                         getWindow().setStatusBarColor(ContextCompat.getColor(MainActivity.this,
-                                R.color.colorPrimaryDark));
+                                android.R.color.white));
                     }
                 }
 
             }
+
 
             @Override
             public void onTabUnselected(TabLayout.Tab tab) {
