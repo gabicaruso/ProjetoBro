@@ -16,22 +16,20 @@
         android:textAlignment="center"
         android:textSize="23sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/editName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editName"
+        android:id="@+id/editFirstName"
         android:layout_width="298dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:layout_marginBottom="8dp"
-        android:autofillHints="@string/nome"
+        android:autofillHints="@string/email"
         android:background="@drawable/text"
         android:ems="10"
         android:hint="@string/nome"
-        android:inputType="textPersonName"
+        android:inputType="textEmailAddress"
         app:layout_constraintBottom_toTopOf="@id/editLastName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -42,105 +40,89 @@
         android:layout_width="298dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        android:autofillHints="@string/sobrenome"
+        android:autofillHints="@string/email"
         android:background="@drawable/text"
         android:ems="10"
         android:hint="@string/sobrenome"
-        android:inputType="textPersonName"
+        android:inputType="textEmailAddress"
         app:layout_constraintBottom_toTopOf="@id/editBirthday"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/editName" />
+        app:layout_constraintTop_toBottomOf="@id/editFirstName" />
 
     <EditText
         android:id="@+id/editBirthday"
         android:layout_width="298dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        android:autofillHints="@string/nascimento"
+        android:autofillHints="@string/email"
         android:background="@drawable/text"
         android:ems="10"
         android:hint="@string/nascimento"
-        android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@id/editCPF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/editLastName" />
+
 
     <EditText
         android:id="@+id/editCPF"
         android:layout_width="298dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        android:autofillHints="@string/cpf"
+        android:autofillHints="@string/email"
         android:background="@drawable/text"
         android:ems="10"
         android:hint="@string/cpf"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@id/editAddress"
+        app:layout_constraintBottom_toTopOf="@id/editState"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/editBirthday" />
 
-    <EditText
-        android:id="@+id/editAddress"
-        android:layout_width="298dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:autofillHints="@string/endereco"
-        android:background="@drawable/text"
-        android:ems="10"
-        android:hint="@string/endereco"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@id/editComplemento"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/editCPF" />
-
-    <EditText
-        android:id="@+id/editComplemento"
-        android:layout_width="298dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:autofillHints="@string/complemento"
-        android:background="@drawable/text"
-        android:ems="10"
-        android:hint="@string/complemento"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@id/editCity"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/editAddress" />
-
-    <EditText
-        android:id="@+id/editCity"
-        android:layout_width="298dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:autofillHints="@string/cidade"
-        android:background="@drawable/text"
-        android:ems="10"
-        android:hint="@string/cidade"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@id/editState"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/editComplemento" />
 
     <EditText
         android:id="@+id/editState"
         android:layout_width="298dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        android:autofillHints="@string/estado"
+        android:autofillHints="@string/email"
         android:background="@drawable/text"
         android:ems="10"
         android:hint="@string/estado"
-        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@id/editCity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editCPF" />
+
+    <EditText
+        android:id="@+id/editCity"
+        android:layout_width="298dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:autofillHints="@string/email"
+        android:background="@drawable/text"
+        android:ems="10"
+        android:hint="@string/cidade"
+        app:layout_constraintBottom_toTopOf="@id/editStreet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editState" />
+
+    <EditText
+        android:id="@+id/editStreet"
+        android:layout_width="298dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:autofillHints="@string/email"
+        android:background="@drawable/text"
+        android:ems="10"
+        android:hint="@string/endereco"
         app:layout_constraintBottom_toTopOf="@id/editEmail"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/editCity" />
+
+
 
     <EditText
         android:id="@+id/editEmail"
@@ -155,7 +137,7 @@
         app:layout_constraintBottom_toTopOf="@id/editPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/editState" />
+        app:layout_constraintTop_toBottomOf="@id/editStreet" />
 
 
     <EditText
@@ -193,6 +175,7 @@
         android:text="@string/signin"
         android:textColor="#FFFF"
         app:layout_constraintBottom_toBottomOf="@id/buttonBack"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/buttonBack"
         app:layout_constraintTop_toBottomOf="@id/editPassword"
