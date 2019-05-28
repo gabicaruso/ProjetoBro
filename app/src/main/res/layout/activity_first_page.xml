@@ -57,8 +57,8 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="100dp"
         android:backgroundTint="#9CC6D4"
-        android:text="@string/signin"
         android:textColor="#FFFF"
+        android:text="@string/signin"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/buttonLogin"
         app:layout_constraintTop_toBottomOf="@+id/editPassword" />

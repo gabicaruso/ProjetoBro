@@ -47,6 +47,10 @@
 
     <string name="btn_close"> Close </string>
 
+    //Permission
+    <string name="btnpermission"> Permitir </string>
+    <string name="permission"> Permitir aplicativo a manipular a tela bloqueada do aparelho </string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
