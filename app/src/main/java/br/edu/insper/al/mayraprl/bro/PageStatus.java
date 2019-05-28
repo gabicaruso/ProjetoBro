@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 
@@ -15,6 +16,7 @@ import android.widget.Toast;
  */
 public class PageStatus extends Fragment {
 
+    private ProgressBar progressBar;
 
     public PageStatus() {
         // Required empty public constructor
@@ -24,8 +26,14 @@ public class PageStatus extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_pagina_saldo, container, false);
+
+        View view = inflater.inflate(R.layout.fragment_pagina_saldo, container, false);
+
+        progressBar = view.findViewById(R.id.progressBar);
+
+        progressBar.setProgress(50); // trocar pela variavel dos pontos
+
+        return view;
     }
 
 
