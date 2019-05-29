@@ -4,7 +4,10 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.app.Fragment;
+import android.support.v4.view.GestureDetectorCompat;
+import android.view.GestureDetector;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
@@ -29,27 +32,42 @@ public class OverlayFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_overlay, container, false);
+        final GestureDetector gesture = new GestureDetector(getActivity(), new GestureDetector.SimpleOnGestureListener() {
+            
 
-        Button close = view.findViewById(R.id.close);
-        close.setOnClickListener(new OnClickListener() {
             @Override
-            public void onClick(View v) {
-                getActivity().finish();
+            public boolean onDown(MotionEvent e) {
+                return true;
             }
+
+            @Override
+            public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX,
+                                   float velocityY) {
+                // Deslizar para a direita para abrir o site
+                if (e2.getY() > e1.getY()) {
+                    Uri uri = Uri.parse("https://www.cocacola.com.br/pt/home/");
+                    Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                    startActivity(intent);
+                    getActivity().finish();
+
+                }
+                // Deslizar para a esquerda para desbloquar o telefone
+                else if (e2.getY() < e1.getY()) {
+                    getActivity().finish();
+                }
+                return true;
+            }
+
         });
 
-        Button link = view.findViewById(R.id.button);
-        link.setOnClickListener(new OnClickListener() {
+        view.setOnTouchListener(new View.OnTouchListener() {
             @Override
-            public void onClick(View v) {
-                Uri uri = Uri.parse("http://www.google.com");
-                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-                startActivity(intent);
-                getActivity().finish();
-
+            public boolean onTouch(View v, MotionEvent event) {
+                return gesture.onTouchEvent(event);
             }
         });
         return view;
     }
+
 }
 
