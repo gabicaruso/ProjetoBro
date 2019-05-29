@@ -1,0 +1,25 @@
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/wld_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:minHeight="?attr/actionBarSize">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <ImageView
+            android:contentDescription="@android:string/autofill"
+            android:layout_width="121dp"
+            android:layout_height="63dp"
+            android:src="@drawable/bro2"
+            />
+
+    </LinearLayout>
+
+
+
+</android.support.v7.widget.Toolbar>

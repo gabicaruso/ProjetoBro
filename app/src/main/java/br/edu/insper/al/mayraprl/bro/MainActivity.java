@@ -1,6 +1,8 @@
 package br.edu.insper.al.mayraprl.bro;
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.PorterDuff;
 import android.os.Build;
 import android.support.annotation.NonNull;
 import android.support.design.widget.TabItem;

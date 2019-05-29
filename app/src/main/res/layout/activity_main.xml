@@ -7,41 +7,44 @@
     android:orientation="vertical"
     tools:context="com.codingdemos.tabLayout.MainActivity">
 
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:minHeight="?/attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-        app:theme="@style/ThemeOverlay.AppCompat.Dark" />
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar"/>
+
+    <View android:id="@+id/separator"
+        android:background="#BEBEBE"
+        android:layout_width = "fill_parent"
+        android:layout_height="3dip" />
 
     <android.support.design.widget.TabLayout
         android:id="@+id/tablayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@android:color/white"
-        app:tabSelectedTextColor="@android:color/white"
-        app:tabTextColor="@android:color/black">
+        app:tabTextColor="@android:color/black"
+        app:tabIconTint="#BEBEBE"
+        app:tabIndicatorColor="	#FC878D"
+        >
 
         <android.support.design.widget.TabItem
             android:id="@+id/tabChats"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/interacao"
+            android:icon="@drawable/interacao"
             android:backgroundTint="@android:color/darker_gray"/>
 
         <android.support.design.widget.TabItem
             android:id="@+id/tabStatus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/worldwide" />
+            android:icon="@drawable/worldwide"
+             />
 
         <android.support.design.widget.TabItem
             android:id="@+id/tabCalls"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/settings"/>
+            android:icon="@drawable/settings"
+            />
 
     </android.support.design.widget.TabLayout>
 
