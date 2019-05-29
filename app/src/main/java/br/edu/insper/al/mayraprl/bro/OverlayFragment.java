@@ -24,6 +24,7 @@ import android.widget.Button;
  */
 public class OverlayFragment extends Fragment {
 
+
     public static OverlayFragment newInstance() {
         OverlayFragment fragment = new OverlayFragment();
         return fragment;
