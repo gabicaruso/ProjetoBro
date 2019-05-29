@@ -58,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
                             android.R.color.white));
                     tabLayout.setBackgroundColor(ContextCompat.getColor(MainActivity.this,
                             android.R.color.white));
+                    
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                         getWindow().setStatusBarColor(ContextCompat.getColor(MainActivity.this,
                                 android.R.color.white));
