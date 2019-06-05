@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "207310165535-82s90ja20co36uc11rrelq9244per1vu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.edu.insper.al.mayraprl.bro",
+            "certificate_hash": "a704f7b65ab5abdbced3439758c9ab9662f623c3"
+          }
+        },
+        {
           "client_id": "207310165535-vjb04rom42orlg6c5ntapr9it1jgh921.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
