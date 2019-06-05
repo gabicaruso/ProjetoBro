@@ -29,9 +29,7 @@ public class PageStatus extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_pagina_saldo, container, false);
 
-        progressBar = view.findViewById(R.id.progressBar);
 
-        progressBar.setProgress(50); // trocar pela variavel dos pontos
 
         return view;
     }
