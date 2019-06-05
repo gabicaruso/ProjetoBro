@@ -3,14 +3,76 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:alwaysDrawnWithCache="false"
+    android:background="@color/colorStatus"
     tools:context=".PageStatus">
+
+    <TextView
+        android:id="@+id/pontos"
+        android:layout_width="228dp"
+        android:layout_height="37dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginRight="100dp"
+        android:text="@string/bro" />
+
+    <TextView
+        android:id="@+id/max_pontos"
+        android:layout_width="63dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="320dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/num_max" />
+
+    <TextView
+        android:id="@+id/trocar_pontos"
+        android:layout_width="177dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/pontos" />
+
+    <TextView
+        android:id="@+id/grana"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="520dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/grana" />
+
+    <ImageView
+        android:id="@+id/botao1"
+        android:layout_width="185dp"
+        android:layout_height="140dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="350dp"
+        android:contentDescription="@string/password"
+        android:src="@drawable/botao" />
+
+    <ImageView
+        android:id="@+id/botao2"
+        android:layout_width="185dp"
+        android:layout_height="140dp"
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="350dp"
+        android:contentDescription="@string/password"
+        android:src="@drawable/botao_azul" />
 
 
     <ProgressBar
-        android:id="@+id/progressBar"
-        style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="150dp" />
+        android:id="@+id/pb"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="339dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="200dp"
+        android:progress="60"
+        android:progressDrawable="@drawable/custom_progress"
+        android:visibility="visible"
+        tools:style="@style/Widget.AppCompat.ProgressBar" />
 
 </FrameLayout>

@@ -21,7 +21,6 @@
         android:layout_height="wrap_content"
         android:background="@android:color/white"
         app:tabTextColor="@android:color/black"
-        app:tabIconTint="#BEBEBE"
         app:tabIndicatorColor="	#FC878D"
         >
 

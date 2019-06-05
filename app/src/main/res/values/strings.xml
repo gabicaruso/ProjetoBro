@@ -20,6 +20,13 @@
     <string name="estado"> Estado </string>
     <string name="cpf"> CPF </string>
 
+    //page status
+    <string name="bro"> Bro, você tem 7.730 pontos! </string>
+    <string name="num_max">10.000</string>
+    <string name="pontos"> Troque seus pontos :) </string>
+    <string name="grana"> Vamos falar de grana :) </string>
+    <string name="coca"> Coca Cola Zero \n Visto às 15h32</string>
+
 
     //usersSettings
     <string name="logout"> Log Out </string>
