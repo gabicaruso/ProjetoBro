@@ -1,6 +1,8 @@
 package br.edu.insper.al.mayraprl.bro;
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.PorterDuff;
 import android.os.Build;
 import android.support.annotation.NonNull;
 import android.support.design.widget.TabItem;
@@ -56,6 +58,8 @@ public class MainActivity extends AppCompatActivity {
                             android.R.color.white));
                     tabLayout.setBackgroundColor(ContextCompat.getColor(MainActivity.this,
                             android.R.color.white));
+                    tab.setIcon(R.drawable.selector_ong);
+                    
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                         getWindow().setStatusBarColor(ContextCompat.getColor(MainActivity.this,
                                 android.R.color.white));
@@ -66,6 +70,7 @@ public class MainActivity extends AppCompatActivity {
                             android.R.color.white));
                     tabLayout.setBackgroundColor(ContextCompat.getColor(MainActivity.this,
                             android.R.color.white));
+                    tab.setIcon(R.drawable.selector_settings);
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                         getWindow().setStatusBarColor(ContextCompat.getColor(MainActivity.this,
                                 android.R.color.white));
@@ -76,6 +81,7 @@ public class MainActivity extends AppCompatActivity {
                             android.R.color.white));
                     tabLayout.setBackgroundColor(ContextCompat.getColor(MainActivity.this,
                             android.R.color.white));
+                    tab.setIcon(R.drawable.selector_status);
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                         getWindow().setStatusBarColor(ContextCompat.getColor(MainActivity.this,
                                 android.R.color.white));

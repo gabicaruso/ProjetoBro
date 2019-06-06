@@ -3,13 +3,109 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:alwaysDrawnWithCache="false"
+    android:background="@color/colorStatus"
     tools:context=".PageStatus">
 
-    <ProgressBar
-        android:id="@+id/progressBar"
-        style="?android:attr/progressBarStyleHorizontal"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="150dp" />
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/pontos"
+                android:layout_width="228dp"
+                android:layout_height="37dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginRight="100dp"
+                android:text="@string/bro" />
+
+            <ProgressBar
+                android:id="@+id/pb"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="339dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:progress="60"
+                android:progressDrawable="@drawable/custom_progress"
+                android:visibility="visible"
+                tools:style="@style/Widget.AppCompat.ProgressBar" />
+
+            <TextView
+                android:id="@+id/max_pontos"
+                android:layout_width="63dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="320dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/num_max" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/trocar_pontos"
+                android:layout_width="177dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/pontos" />
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/rectangle">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/botao1"
+                        android:layout_width="185dp"
+                        android:layout_height="140dp"
+                        android:layout_marginLeft="10dp"
+                        android:contentDescription="@string/password"
+                        android:src="@drawable/botao" />
+                    <ImageView
+                        android:id="@+id/botao2"
+                        android:layout_width="185dp"
+                        android:layout_height="140dp"
+                        android:layout_marginLeft="10dp"
+                        android:contentDescription="@string/password"
+                        android:src="@drawable/botao_azul" />
+                    <ImageView
+                        android:id="@+id/botao3"
+                        android:layout_width="185dp"
+                        android:layout_height="140dp"
+                        android:layout_marginLeft="10dp"
+                        android:contentDescription="@string/password"
+                        android:src="@drawable/botao_verde" />
+
+
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
 </FrameLayout>

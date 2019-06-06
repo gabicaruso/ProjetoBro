@@ -20,6 +20,13 @@
     <string name="estado"> Estado </string>
     <string name="cpf"> CPF </string>
 
+    //page status
+    <string name="bro"> Bro, você tem 7.730 pontos! </string>
+    <string name="num_max">10.000</string>
+    <string name="pontos"> Troque seus pontos :) </string>
+    <string name="grana"> Vamos falar de grana :) </string>
+    <string name="coca"> Coca Cola Zero \n Visto às 15h32</string>
+
 
     //usersSettings
     <string name="logout"> Log Out </string>
@@ -27,23 +34,24 @@
     <string name="status"> Status </string>
     <string name="calls"> Calls </string>
 
-
     //ResetPassword
     <string name="emailResetPassword"> Insira o email para redefinição da senha: </string>
     <string name="btnResetPassword"> Enviar </string>
 
     //Settings
     <string name="conta"> conta </string>
-    <string name="e_mail"> email </string>
+    <string name="e_mail"> e-mail </string>
     <string name="contacorrente"> conta-corrente </string>
     <string name="pagamentos"> pagamentos </string>
     <string name="dinheiro"> seu dinheiro nao foi transferido </string>
-    <string name="duvidas"> duvidas </string>
+    <string name="duvidas"> dúvidas </string>
     <string name="conversao"> conversao em pontos </string>
     <string name="minimizar"> botao minimizar </string>
-    <string name="ong"> quero indicar uma ong </string>
-    <string name="suporte"> Suporte </string>
-
+    <string name="ong"> quero indicar uma ONG </string>
+    <string name="sem_conta"> não tenho uma conta bancária</string>
+    <string name="suporte"> suporte </string>
+    <string name="problemas"> problemas no app </string>
+    <string name="entrar_contato"> entrar em contato </string>
 
     <string name="btn_close"> Close </string>
 

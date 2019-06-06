@@ -19,13 +19,11 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 
-
 public class SignIn extends AppCompatActivity {
     private EditText editEmail, editPassword, editFirstName, editLastName, editBirthday, editCPF, editState, editCity, editStreet;
-
     private DatabaseReference databaseCadastro;
     private FirebaseAuth firebaseAuth;
-
+  
 
     @Override
     protected void onCreate(Bundle savedInstance) {
@@ -35,7 +33,6 @@ public class SignIn extends AppCompatActivity {
 
         editEmail = findViewById(R.id.editEmail);
         editPassword = findViewById(R.id.editPassword);
-
         editFirstName = findViewById(R.id.editFirstName);
         editLastName = findViewById(R.id.editLastName);
         editBirthday = findViewById(R.id.editBirthday);
@@ -131,7 +128,6 @@ public class SignIn extends AppCompatActivity {
             }
         });
 
-
     }
 
     private void newUser(String name, String email, String id, String last, String date, String cpf, String estado, String city, String street) {
@@ -141,5 +137,3 @@ public class SignIn extends AppCompatActivity {
 
 
 }
-
-
