@@ -1,23 +1,20 @@
 package br.edu.insper.al.mayraprl.bro;
 
-
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
+@SuppressLint("ValidFragment")
+public class Pages extends Fragment {
 
-/**
- * A simple {@link Fragment} subclass.
- */
-public class PageSettings extends Fragment {
+    private int xmlPage;
 
-
-    public PageSettings() {
-        // Required empty public constructor
+    @SuppressLint("ValidFragment")
+    public Pages(int xmlPage) {
+        this.xmlPage = xmlPage;
     }
 
 
@@ -26,7 +23,7 @@ public class PageSettings extends Fragment {
                              Bundle savedInstanceState) {
 
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_pagina_settings, container, false);
+        return inflater.inflate(xmlPage, container, false);
     }
 
 }

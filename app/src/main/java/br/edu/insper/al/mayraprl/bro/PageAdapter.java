@@ -17,11 +17,11 @@ public class PageAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         switch(position) {
             case 0:
-                return new PageStatus() ;
+                return new Pages(R.layout.fragment_pagina_saldo);
             case 1:
-                return new PageONG();
+                return new Pages(R.layout.fragment_pagina_ong);
             case 2:
-                return new PageSettings();
+                return new Pages(R.layout.fragment_pagina_settings);
             default:
                 return null;
         }
