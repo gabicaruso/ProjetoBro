@@ -20,17 +20,18 @@
 
         <activity android:name=".OverlayActivity" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".Settings" />
         <activity android:name=".ResetPassword" />
         <activity android:name=".firstPage">
+
+        </activity>
+        <activity android:name=".Permission"
+        android:noHistory="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Permission"
-        android:noHistory="true"/>
         <activity android:name=".SignIn"
             android:noHistory="true"/>
 
